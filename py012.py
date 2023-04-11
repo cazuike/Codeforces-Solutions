@@ -17,6 +17,12 @@ def main():
                 count[c] -= 2
                 swaps -=1
                 res += 1
+            while count[c.upper()] >= 2 and swaps > 0:
+                count[c.upper()] -= 2
+                swaps -=1
+                res += 1
+
+
         print(res)
     return True
 
